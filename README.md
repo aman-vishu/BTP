@@ -39,6 +39,7 @@
 
 ---------------------------------x---------------------------------------------------------------------------------------------------x---------------------------------------------------
 
+
 6.2.3 Implementation 3:
 
 Demonstrates a real-time interactive interface that combines hand tracking with virtual keyboard functionality.
