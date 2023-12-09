@@ -1,6 +1,6 @@
 # BTP
 
-6.2.1 Implementation 1:
+6.2.1 Implementation 1 (Virtual keyboard initial implementations):
 
 1. We employed the combined power of CV2, DLIB, and NumPy to detect eyes in real-time video. By utilizing DLIB's facial landmarks detection, we pinpointed 68 specific landmarks on the face. With this, we could isolate the locations for each eye and then detect the eye position on the face.
 
@@ -15,7 +15,7 @@
 
 ----------------------------------x-------------------------------------------------------------------------------------------x----------------------------------------------------------
 
-6.2.2 Implementation 2:
+6.2.2 Implementation 2 (Navigation using Head Movements and Gestures):
 
 1. Facial Landmark Detection and Thresholds:
    - Utilizes Dlib for facial landmark estimation.
@@ -40,7 +40,7 @@
 ---------------------------------x---------------------------------------------------------------------------------------------------x---------------------------------------------------
 
 
-6.2.3 Implementation 3:
+6.2.3 Implementation 3 (Typing using Hand Gestures):
 
 Demonstrates a real-time interactive interface that combines hand tracking with virtual keyboard functionality.
 1. Initialize Key Objects: You create instances of the ‘Key’ class for each keyboard key, specifying their positions, sizes, and corresponding letters or functions.
