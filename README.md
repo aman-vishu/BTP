@@ -69,6 +69,63 @@ Demonstrates a real-time interactive interface that combines hand tracking with 
    - Display a text box and update its content based on mouse clicks or hand gestures over virtual keys.
    - Simulate keyboard presses for text input.
 
+---------------------------------x---------------------------------------------------------------------------------------------------x---------------------------------------------------
+
+6.2.4 Implementation 4 (Gaze Typing):
+
+Camera & Frame Handling:
+- Initialization: Sets up the camera and configures frame properties.
+- Frame Processing: Retrieves frames and applies necessary adjustments.
+
+Face Detection:
+- Facial Landmark Detection: Uses Dlib to identify facial features.
+- Bounding Box Highlighting: Draws rectangles around detected faces.
+
+Eye Movement Detection:
+- Blink Identification: Determines blinks based on eye landmark positions.
+- Pupil Tracking: Tracks pupil movement for gaze interaction.
+
+Calibration:
+- Guided Process: Helps define the interaction area through user actions.
+- Data Collection: Collects and analyzes calibration data for accurate
+setup.
+
+Keyboard Projection:
+- Virtual Keyboard Generation: Creates a keyboard based on calibration.
+- Visual Feedback: Provides interactive visual alignment cues.
+
+Simulated Typing:
+- Eye-Guided Input: Interprets eye movements for keyboard selection.
+- Input Interpretation: Translates eye interactions into meaningful input.
 
 
+---------------------------------x---------------------------------------------------------------------------------------------------x---------------------------------------------------
 
+6.2.5 Implementation 5 (Navigation Hand Gestures):
+
+Initialization: Establishes camera connection and initializes the HandTrackingModule for subsequent processing, configuring essential parameters for tracking accuracy and video feed.
+
+Video Processing Loop: Manages an iterative process to capture live video frames, ensuring continuous analysis of hand movements and gestures in real-time from the camera feed.
+
+Hand Detection: Utilizes the HandTrackingModule, leveraging MediaPipe's capabilities, to precisely locate and track hands within each video frame, identifying specific landmarks for subsequent gesture analysis.
+
+Gesture Analysis: Analyzes finger positions and configurations, interpreting gestures for diverse interactions, enabling actions like pointing, clicking, and movement based on recognized hand poses.
+
+Mouse Control and Clicking: Translates hand movements into cursor actions, enabling precise control of the mouse pointer, and executes clicking actions in response to recognized finger gestures, facilitating interactive control.
+
+HandTrackingModule:
+Hand Detection and Landmark Tracking: Implements MediaPipe's hand tracking solutions to locate and track hand landmarks.
+Finger Gesture Recognition: Detects finger poses and uses them for different interactions.
+Distance Calculation: Measures distances between specific landmarks for gesture-based actions, like clicking.
+
+---------------------------------x---------------------------------------------------------------------------------------------------x---------------------------------------------------
+
+
+6.2.6 Implementation 6 (Integration):
+Button Initialization: Defines regions on the window as buttons, associating each region with a corresponding script to execute.
+Mouse Click Handling: Monitors mouse clicks within the window and triggers actions based on the clicked region.
+Button States: Maintains states for each button to track if a script is running or stopped.
+Window Display: Renders the graphical window using OpenCV, showcasing interactive buttons with different colors and labels.
+Script Execution: Initiates subprocesses to run specific Python scripts associated with each button when clicked.
+Dynamic Updates: Updates button appearances based on script execution states, indicating whether a script is running or stopped.
+User Interaction: Allows users to start or stop scripts by clicking the corresponding buttons.
